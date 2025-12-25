@@ -1,1 +1,2 @@
-# labs JS station 1
+# JS. Station 1
+### word counter
