@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Word Counter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <main>
+            <article>
+                <form id="text-form">
+                    <fieldset id="text-field" class="frosted-glass">
+                        <legend>Paste text here</legend>
+                        <textarea id="text-input" name="user-text" class="frosted-glass"></textarea>
+                        <div id="controls">
+                            <button type="button" id="change-bg-btn" class="frosted-glass">Change background</button>
+                            <div id="auto-mode" class="frosted-glass">
+                                <input type="checkbox" id="auto-toggle" />
+                                <label for="auto-toggle">Auto</label>
+                            </div>
+                            <button type="submit" id="submit-btn" class="frosted-glass">Scan</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+            <aside id="stats-section">
+                <fieldset id="stats-field" class="frosted-glass">
+                    <legend>Stats</legend>
+                    <div id="stats-display">
+                        <div class="metric">
+                            <p class="display-label">Letters</p>
+                            <p id="letter-count-display" class="count-display frosted-glass">0</p>
+                        </div>
+                        <div class="metric">
+                            <p class="display-label">Words</p>
+                            <p id="word-count-display" class="count-display frosted-glass">0</p>
+                        </div>
+                        <div class="metric">
+                            <p class="display-label">Sentences</p>
+                            <p id="sentence-count-display" class="count-display frosted-glass">0</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </aside>
+        </main>
+        <script type="module" src="./main.js" defer/>
+    </body>
+</html>
